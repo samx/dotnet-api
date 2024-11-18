@@ -1,0 +1,25 @@
+GET http://localhost:5145/todos
+
+###
+
+POST http://localhost:5145/todos
+content-type: application/json
+
+{
+    "name":"Write demo2",
+    "isCompleted":false,
+    "dueDate": "2025-03-10T19:00:00.000Z"
+}
+
+###
+
+GET http://localhost:5145/todos/1
+
+###
+GET http://localhost:5145/todos/2
+
+###
+DELETE http://localhost:5145/todos/1
+
+###
+GET http://localhost:5145/tasks/1
