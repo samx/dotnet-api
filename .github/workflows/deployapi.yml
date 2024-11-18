@@ -16,7 +16,7 @@ jobs:
       run: dotnet restore ./MyFirstAPI.csproj
     
     - name: Build
-      run: dotnet build ./MyFirstAPI.csproj --configuration Release --norestore
+      run: dotnet build ./MyFirstAPI.csproj --configuration Release --no-restore
 
 
 
