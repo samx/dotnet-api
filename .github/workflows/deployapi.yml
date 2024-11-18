@@ -13,10 +13,10 @@ jobs:
       with:
         dotnet-version: 9.0.x
     - name: Install dependencies
-      run: dotnet restore ./MyFirstAPI/MyFirstAPI.csproj
+      run: dotnet restore ./MyFirstAPI.csproj
     
     - name: Build
-      run: dotnet build ./MyFirstAPI/MyFirstAPI.csproj --configuration Release --norestore
+      run: dotnet build ./MyFirstAPI.csproj --configuration Release --norestore
 
 
 
