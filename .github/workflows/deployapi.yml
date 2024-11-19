@@ -1,6 +1,9 @@
 name: Deploy Munson Pickles API
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 env:
