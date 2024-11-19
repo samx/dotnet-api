@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-AZURE_WEBAPP_NAME: "app-dotnet-api"
+  AZURE_WEBAPP_NAME: "app-dotnet-api"
 
 
 jobs:
