@@ -23,6 +23,8 @@ app.Use(async (context, next)=>{
 
 app.MapGet("/todos", async (ITaskService service) => await service.GetTodos());
 
+app.MapGet("/more-todos", async (ITaskService service) => await service.GetTodos());
+
 app.MapGet("/todos/{id}", async (int id, ITaskService service) =>
 {
     var targetTodo = await service.GetTodoById(id);
